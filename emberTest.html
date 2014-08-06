@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title></title>
+	<script>
+
+		(function () {
+			emberCanonical = '{{viewCanonicalUrl}}';
+			isEmberBound = (emberCanonical.indexOf('{{') <= 0 && emberCanonical.indexOf('}}') <= 0);
+			console.log("isEmberBound flag is " + isEmberBound);
+			
+			console.log("emberCanonical.indexOf('{{') is " + emberCanonical.indexOf('{{'));
+			console.log("emberCanonical.indexOf('}}') is " + emberCanonical.indexOf('}}'));
+
+			// using > -1 comparisons
+			isEmberBound = (emberCanonical.indexOf('{{') > -1 && emberCanonical.indexOf('}}') > -1);
+			console.log("isEmberBound flag is now " + isEmberBound);
+		})();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
